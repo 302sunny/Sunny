@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My World</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:url("https://i.pinimg.com/736x/d9/b4/55/d9b4553bb425b4691dfea837cb5ba86f.jpg") no-repeat center center/cover;
+    background-attachment:fixed;
+}
+
+/* Navbar */
+
+nav{
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    background:rgba(0,0,0,0.5);
+    padding:8px 15px;
+    margin:5px;
+    font-size:22px;
+}
+
+/* Welcome Section */
+
+.welcome{
+    background:yellow;
+    color:red;
+    font-size:50px;
+    font-weight:bold;
+    padding:10px;
+    margin-top:20px;
+}
+
+/* About Heading */
+
+.heading{
+    background:red;
+    color:orange;
+    text-align:center;
+    font-size:45px;
+    font-weight:bold;
+    margin-top:40px;
+    padding:10px;
+}
+
+/* About Content */
+
+.about{
+    background:rgba(128,128,128,0.9);
+    color:gold;
+    text-align:center;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+}
+
+.about-scroll{
+    position:absolute;
+    width:100%; 
+    animation:upscroll 10s linear infinite;
+}
+
+@keyframes upscroll{
+    0%{
+        transform:translateY(10%);
+    }
+
+    100%{
+        transform:translateY(-50%);
+    }
+}
+
+/* Scrolling Gallery */
+
+.slider{
+    width:100%;
+    overflow:hidden;
+    margin-top:30px;
+    padding:20px 0;
+}
+
+.slide-track{
+    display:flex;
+    width:calc(250px * 12);
+    animation:scroll 20s linear infinite;
+}
+
+.slide-track img{
+    width:250px;
+    height:200px;
+    object-fit:cover;
+    margin-right:15px;
+    border:3px solid white;
+    border-radius:10px;
+}
+
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(calc(-250px * 6));
+    }
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    color:white;
+    background:rgba(0,0,0,0.7);
+    padding:15px;
+    margin-top:30px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .welcome{
+        font-size:32px;
+    }
+
+    .heading{
+        font-size:30px;
+    }
+
+    .about{
+        font-size:18px;
+    }
+
+    .slide-track img{
+        width:180px;
+        height:140px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="#Home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="welcome">
+    Welcome to My World
+</div>
+
+<div class="heading" id="about">
+    About Me
+</div>
+
+<div class="about">
+    <div class="about-scroll">
+   <p>Hello! My name is Sunny Kumar, and welcome to my official portfolio website.</p>
+<p>I am currently pursuing my Polytechnic Diploma in Computer Science and Engineering (CSE) </p>
+<p>from Government Polytechnic, Katihar, under the State Board of Technical Education (SBTE), Bihar.</p>
+<p>My academic journey is deeply rooted in tech, where I constantly learn how software and </p>
+<p>modern technologies shape the world around us.</p>
+<p>Beyond my college lectures, I am a passionate programmer who loves spending hours writing, debugging, and optimizing code.</p>
+<p>I have a strong inclination toward Web Development, and I thoroughly enjoy converting unique ideas into functional digital reality.</p>
+<p>My core technical skills include working with fundamental web technologies like HTML5, CSS3, and modern JavaScript.</p>
+<p>I am always eager to apply my programming logic to build innovative solutions and enhance my frontend development capabilities.</p>
+<p>Apart from engineering and coding, I am an active digital content creator and aspiring social media influencer.</p>
+<p>I regularly manage and create engaging content for popular platforms including YouTube, Instagram, and Moj.</p>
+<p>My content creation journey has taught me the backend mechanics of social media growth and optimization.</p>
+<p>I specialize in identifying viral video trends, drafting engaging hooks, and research-driven hashtag management.</p>
+<p>I am also quite active in the influencer marketing ecosystem, collaborating with platforms like Kofluence, Plixxo, and Wishlink.</p>
+<p>Furthermore, I explore the world of e-commerce by managing product catalogs and digital inventory as a seller on the Meesho platform.</p>
+<p>When I am not coding or editing videos, I love following sports, especially keeping a close eye on cricket matches,</p>
+<p> IPL rosters, and global tournaments.</p>
+<p>This website serves as a living timeline of my engineering skills, creative content journey, and my passion for continuous tech learning.</p>
+</div>
+</div>
+
+<!-- Auto Scrolling Gallery -->
+
+<div class="slider">
+    <div class="slide-track">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKuZaI-K9XwbGvv7mDsypCYx-oftWQgFOVwg&s" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF8FwEQcN76kLjRHfGta7dnHHM0BgeFQ7Wg&s" alt="">
+        <img src="https://images.pexels.com/photos/1887624/pexels-photo-1887624.jpeg" alt="">
+        <img src="https://i.pinimg.com/736x/d9/b4/55/d9b4553bb425b4691dfea837cb5ba86f.jpg" alt="">
+        <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2021/02/19064621/what-is-off-facebook-activity-featured.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPxvIMblo6qRb_wzgQBW9omoEd0ksf1ia0g&s" alt="">
+        <img src="https://cdn.pixabay.com/photo/2022/01/21/00/38/youtube-icon-6953526_1280.jpg" alt="">
+
+        <!-- Duplicate Images for Smooth Loop -->
+
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKuZaI-K9XwbGvv7mDsypCYx-oftWQgFOVwg&s" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF8FwEQcN76kLjRHfGta7dnHHM0BgeFQ7Wg&s" alt="">
+        <img src="https://images.pexels.com/photos/1887624/pexels-photo-1887624.jpeg" alt="">
+        <img src="https://i.pinimg.com/736x/d9/b4/55/d9b4553bb425b4691dfea837cb5ba86f.jpg" alt="">
+        <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2021/02/19064621/what-is-off-facebook-activity-featured.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPxvIMblo6qRb_wzgQBW9omoEd0ksf1ia0g&s" alt="">
+        <img src="https://cdn.pixabay.com/photo/2022/01/21/00/38/youtube-icon-6953526_1280.jpg" alt="">
+
+
+    </div>
+</div>
+
+<footer id="contact">
+    © 2026 My World | Designed By sunny Kumar
+</footer>
+
+</body>
+</html>
