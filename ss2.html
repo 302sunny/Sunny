@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OUR COUNTRY</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:url("https://www.shutterstock.com/image-vector/map-india-famous-places-600w-374898937.jpg") no-repeat center center/cover;
+    background-attachment:fixed;
+}
+
+/* Navbar */
+
+nav{
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    background:rgba(0,0,0,0.5);
+    padding:8px 15px;
+    margin:5px;
+    font-size:22px;
+}
+
+/* Welcome Section */
+.welcome{
+    width: 100%;
+    overflow: hidden;
+    background: rgba(48, 44, 44, 0.427);   /* Pink Background */
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.scroll-link{
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollLeft 12s linear infinite;
+}
+
+/* Mouse hover par animation stop */
+.scroll-link:hover{
+    animation-play-state: paused;
+}
+
+.scroll-link a{
+    text-decoration: none;
+    color: rgb(245, 7, 7);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@keyframes scrollLeft{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-link a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@keyframes scrollLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* About Heading */
+
+.heading{
+    background:rgba(116, 77, 77, 0.326);
+    color:rgb(255, 0, 0);
+    text-align:center;
+    font-size:45px;
+    font-weight:bold;
+    margin-top:40px;
+    padding:10px;
+}
+
+/* About Content */
+
+.about{
+    background:rgba(82, 73, 73, 0.409);
+    color:rgb(255, 255, 255);
+    text-align:center;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+}
+
+.about-scroll{
+    position:absolute;
+    width:100%; 
+    animation:upscroll 15s linear infinite;
+}
+p{
+    margin: 12px;
+}
+@keyframes upscroll{
+    0%{
+        transform:translateY(10%);
+    }
+
+    100%{
+        transform:translateY(-50%);
+    }
+}
+
+/* Scrolling Gallery */
+
+.slider{
+    width:100%;
+    overflow:hidden;
+    margin-top:30px;
+    padding:20px 0;
+}
+
+.slide-track{
+    display:flex;
+    width:calc(250px * 12);
+    animation:scroll 20s linear infinite;
+}
+
+.slide-track img{
+    width:250px;
+    height:200px;
+    object-fit:cover;
+    margin-right:15px;
+    border:3px solid white;
+    border-radius:10px;
+}
+
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(calc(-250px * 6));
+    }
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    color:rgb(208, 255, 0);
+    background:rgba(0, 0, 0, 0.301);
+    padding:15px;
+    margin-top:30px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .welcome{
+        font-size:32px;
+    }
+
+    .heading{
+        font-size:30px;
+    }
+
+    .about{
+        font-size:18px;
+    }
+
+    .slide-track img{
+        width:180px;
+        height:140px;
+    }
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+th{
+    background:rgba(189, 129, 84, 0.397);
+    color:rgb(131, 55, 55);
+    padding:10px;
+}
+
+td{
+    background:green;
+    color:white;
+    padding:8px;
+}
+
+table, th, td{
+    border:3px solid rgb(170, 146, 9);
+}
+
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="#Home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+<div class="welcome">
+    <div class="scroll-link">
+        <a href="https://302sunny.github.io/Sunny/" target="_blank">
+            🌐 Visit My First Website - https://302sunny.github.io/Sunny/
+        </a>
+    </div>
+</div>
+
+<div class="heading" id="about">
+    WELCOME TO OUR COUNTRY
+</div>
+
+<div class="about">
+    <div class="about-scroll">
+   <p>Hello, my name is Sunny Kumar and welcome to my <SPAN STYLE="COLOR:RED;font-weight:bold;
+    background-color:yellow;">India-themed</SPAN> website.</p>
+   <p>Welcome to India, a truly <span style="color:red; background-color:yellow; font-weight:bold;">beautiful country.</span></p>
+<p>Our land is famous for <span style="color:red; background-color:yellow; font-weight:bold;">incredible diversity.</span></p>
+<p>Ancient <span style="color:red; background-color:yellow; font-weight:bold;">history and rich culture</span> define us.</p>
+<p>People of many <span style="color:red; background-color:yellow; font-weight:bold;">religions</span> live here together.</p>
+<p>We <span style="color:red; background-color:yellow; font-weight:bold;">always welcome</span> guests with open hearts.</p>
+<p>The majestic<span style="color:red; background-color:yellow; font-weight:bold;"> Taj Mahal</span> represents our heritage.</p>
+<p>The <span style="color:red; background-color:yellow; font-weight:bold;">historic </span>Red Fort shows our pride.</p>
+<p>Beautiful landscapes stretch from<span style="color:red; background-color:yellow; font-weight:bold;"> north to south.</span></p>
+<p>Our <span style="color:red; background-color:yellow; font-weight:bold;">colorful </span>festivals bring endless joy here.</p>
+<p>Delicious <span style="color:red; background-color:yellow; font-weight:bold;">Indian food </span>is famous worldwide now.</p>
+<p>India is growing fast in <span style="color:red; background-color:yellow; font-weight:bold;">technology field</span>.</p>
+<p>Our young generation is full of talent.</p>
+<p>Unity in diversity is our<span style="color:red; background-color:yellow; font-weight:bold;">real strength.</span></p>
+<p>We love and respect our <span style="color:red; background-color:yellow; font-weight:bold;">great nation</span>.</p>
+<p>Please explore the magic of <span style="color:red; background-color:yellow; font-weight:bold;">wonderful</span> India.</p>
+    </div>
+</div>
+
+<!-- Auto Scrolling Gallery -->
+
+<div class="slider">
+    <div class="slide-track">
+
+        <img src="https://www.indiasinvitation.com/wp-content/uploads/2019/09/Famous-Historical-Places-in-India.webp" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/the-red-fort-delhi.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/the-taj-mahal-agra.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/jaisalmer-fort-jaisalmer.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/ghats-at-varanasi-uttar-pradesh.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/the-golden-temple-amritsar.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRb3fNFwaAISm6Bgdy9yZOCAn92h2XOQGdmw&s" alt="">
+
+        <!-- Duplicate Images for Smooth Loop -->
+
+      <img src="https://www.indiasinvitation.com/wp-content/uploads/2019/09/Famous-Historical-Places-in-India.webp" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/the-red-fort-delhi.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/the-taj-mahal-agra.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/jaisalmer-fort-jaisalmer.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/ghats-at-varanasi-uttar-pradesh.jpg" alt="">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/the-golden-temple-amritsar.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRb3fNFwaAISm6Bgdy9yZOCAn92h2XOQGdmw&s" alt="">
+
+
+    </div>
+</div>
+<center>
+<h2 class="section-title">STATE NAME & CAPITAL</h2>
+</center>
+<table border="1" width="100%">
+    <tr>
+        <th>S.No</th>
+        <th>State</th>
+        <th>Capital</th>
+    </tr>
+
+    <tr><td>1</td><td>Andhra Pradesh</td><td>Amaravati</td></tr>
+    <tr><td>2</td><td>Arunachal Pradesh</td><td>Itanagar</td></tr>
+    <tr><td>3</td><td>Assam</td><td>Dispur</td></tr>
+    <tr><td>4</td><td>Bihar</td><td>Patna</td></tr>
+    <tr><td>5</td><td>Chhattisgarh</td><td>Raipur</td></tr>
+    <tr><td>6</td><td>Goa</td><td>Panaji</td></tr>
+    <tr><td>7</td><td>Gujarat</td><td>Gandhinagar</td></tr>
+    <tr><td>8</td><td>Haryana</td><td>Chandigarh</td></tr>
+    <tr><td>9</td><td>Himachal Pradesh</td><td>Shimla</td></tr>
+    <tr><td>10</td><td>Jharkhand</td><td>Ranchi</td></tr>
+    <tr><td>11</td><td>Karnataka</td><td>Bengaluru</td></tr>
+    <tr><td>12</td><td>Kerala</td><td>Thiruvananthapuram</td></tr>
+    <tr><td>13</td><td>Madhya Pradesh</td><td>Bhopal</td></tr>
+    <tr><td>14</td><td>Maharashtra</td><td>Mumbai</td></tr>
+    <tr><td>15</td><td>Manipur</td><td>Imphal</td></tr>
+    <tr><td>16</td><td>Meghalaya</td><td>Shillong</td></tr>
+    <tr><td>17</td><td>Mizoram</td><td>Aizawl</td></tr>
+    <tr><td>18</td><td>Nagaland</td><td>Kohima</td></tr>
+    <tr><td>19</td><td>Odisha</td><td>Bhubaneswar</td></tr>
+    <tr><td>20</td><td>Punjab</td><td>Chandigarh</td></tr>
+    <tr><td>21</td><td>Rajasthan</td><td>Jaipur</td></tr>
+    <tr><td>22</td><td>Sikkim</td><td>Gangtok</td></tr>
+    <tr><td>23</td><td>Tamil Nadu</td><td>Chennai</td></tr>
+    <tr><td>24</td><td>Telangana</td><td>Hyderabad</td></tr>
+    <tr><td>25</td><td>Tripura</td><td>Agartala</td></tr>
+    <tr><td>26</td><td>Uttar Pradesh</td><td>Lucknow</td></tr>
+    <tr><td>27</td><td>Uttarakhand</td><td>Dehradun</td></tr>
+    <tr><td>28</td><td>West Bengal</td><td>Kolkata</td></tr>
+</table>
+<footer id="contact">
+    © 2026 My World | Designed By sunny Kumar
+</footer>
+
+</body>
+</html>
